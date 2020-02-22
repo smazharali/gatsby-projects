@@ -7,6 +7,7 @@ import Banner from "../components/Banner"
 import About from "../components/Home/About"
 import Tips from "../components/Home/Tips"
 import { graphql } from "gatsby"
+import FeaturedPlaces from "../components/Home/FeaturedPlaces"
 
 export const query = graphql `
   query {
@@ -31,5 +32,6 @@ export default ({ data }) => (
     </SimpleHero>
     <About />
     <Tips />
+    <FeaturedPlaces />
     </Layout>
 )
