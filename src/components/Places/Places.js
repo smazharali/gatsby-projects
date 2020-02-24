@@ -7,15 +7,15 @@ query {
    places: allContentfulProject1Data {
       edges {
         node {
-           contentful_id
            name
            timeRequired
            slug
-           timings
+           contentful_id
            entryFees
+           timings
            images {
               fluid {
-                src
+                ...GatsbyContentfulFluid
               }
            }
         }
