@@ -26,7 +26,6 @@ query {
 
 const Places = () => {
   const { places } = useStaticQuery(getPlaces)
-  console.log(places);
   return (
      <PlaceList places={places} />
   )

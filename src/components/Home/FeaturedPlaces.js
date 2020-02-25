@@ -31,7 +31,6 @@ featuredPlaces: allContentfulProject1Data(filter: {featured: {eq: true}}) {
 const FeaturedPlaces = () => {
    const response = useStaticQuery(getFeaturedPlaces)
    const places = response.featuredPlaces.edges
-   console.log(places)
 
    return (
        <section className={styles.places}>
